@@ -3,4 +3,9 @@ function TodoController($scope){
 		'Learn Angular',
 		'Build Angular'
 	];
+
+	$scope.add = function(newItem){
+		$scope.items.push(newItem);
+		$scope.newItem = '';
+	}
 }
